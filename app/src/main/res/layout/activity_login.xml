@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.yolo.user.muworld.LoginActivity"
+   android:background="#030305"
+    android:id="@+id/etusername">
+
+
+  <ImageView
+      android:layout_width="200dp"
+      android:layout_height="200dp"
+      android:src="@drawable/blackunited"
+      android:layout_centerHorizontal="true"
+      android:id="@+id/united" />
+
+
+
+
+
+    <Button
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/bLogin"
+        android:background="#c0bfbb"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp" />
+
+    <TextView
+        android:textColor="#FFFFFF"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register as new user"
+        android:gravity="center"
+        android:id="@+id/tvRegisterHere"
+        android:layout_below="@+id/bLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp" />
+
+    <EditText
+        android:textColor="#FFFFFF"
+        android:paddingTop="60sp"
+        android:layout_below="@+id/united"
+       android:hint="Username"
+        android:textColorHint="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password" />
+
+    <EditText
+        android:textColorHint="#FFFFFF"
+        android:hint="Password"
+        android:backgroundTint="#FFFFFF"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/username"
+        android:layout_alignRight="@+id/bLogin"
+        android:layout_alignEnd="@+id/bLogin" />
+
+
+</RelativeLayout>
